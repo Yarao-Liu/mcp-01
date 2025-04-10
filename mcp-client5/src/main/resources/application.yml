@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  ai:
+    openai:
+      base-url: https://xxxxxxxxxxxxxxxxx
+      api-key: sk-Jxxxxxxxxxxxxxxxxxxxxxxxxxx
+      chat:
+        options:
+          model: gpt-4
+    mcp:
+      client:
+        type: sync
+        name: mcp-client
+        enabled: true
+        initialized: true
+        version: 1.0.0
+        sse:
+          connections:
+            server1: http://localhost:8080

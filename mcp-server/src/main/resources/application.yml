@@ -1,0 +1,12 @@
+spring:
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: mcp-server
+        version: 1.0.0
+        type: sync
+        resource-change-notification: true
+        prompt-change-notification: true
+        tool-change-notification: true
+        sse-message-endpoint: /mcp/message
